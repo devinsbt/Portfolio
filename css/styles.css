@@ -1,0 +1,229 @@
+/*
+    Font Used : 
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Roboto', monospace;
+*/
+
+/*----------------------------------
+    Global Styles 
+------------------------------------*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.material {
+  /* Material Design Looks */
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+/*----------------------------------
+    Nav-Bar Styles 
+    #0d1722
+------------------------------------*/
+#mainNav {
+  padding: 2rem 1rem;
+  transition: all 0.5s ease;
+}
+
+.navbar-brand,
+.nav-link {
+  font-weight: 300;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-link.active,
+.nav-link:hover,
+.navbar-brand:hover {
+  color: #039be5;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav li {
+  margin-right: 0;
+}
+
+.navbar-nav li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav li:hover:after {
+  width: 100%;
+  background: #039be5;
+}
+
+.fa-bars {
+  color: white;
+}
+
+/*----------------------------------
+    Header Styles 
+------------------------------------*/
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url('../images/header-bg-img.jpg') no-repeat fixed;
+  background-size: cover;
+}
+
+header {
+  color: rgb(214, 214, 214);
+}
+header h1 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header h1,
+header h2 {
+  font-weight: 300;
+}
+
+.header-icon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header-icon i:hover {
+  color: #63ccff;
+}
+
+.header-icon i {
+  color: #039be5;
+  transition: color 0.5s ease;
+  border-radius: 50%;
+}
+
+.header-icon a {
+  margin: 0 auto;
+}
+
+.vertical-center {
+  min-height: 80%; /* Fallback for browsers do NOT support vh unit */
+
+  display: flex;
+  align-items: center;
+}
+
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #039be5; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #039be5;
+  }
+}
+
+/*----------------------------------
+    About Styles 
+------------------------------------*/
+#about {
+  background-color: #4d4855;
+  background-image: linear-gradient(147deg, #000000 0%, #474749 100%);
+  color: white;
+}
+
+#about h2,
+#about h3 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.prof-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 3px solid rgb(177, 177, 177);
+}
+
+#about p {
+  font-weight: 300;
+}
+
+/*----------------------------------
+    Portfolio Styles 
+------------------------------------*/
+
+#portfolio {
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #570854 74%);
+}
+
+#portfolio h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #dadada;
+}
+#portfolio .row.project {
+  margin-bottom: 20px;
+}
+
+#portfolio .card {
+  background: rgba(34, 34, 34, 0.75);
+  color: rgb(180, 180, 180);
+  transition: all 0.3s ease;
+}
+
+#portfolio .card-title {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#portfolio .card:hover {
+  background: rgb(30, 30, 30, 0.9);
+  color: rgb(230, 230, 230);
+  transition: all 0.3s ease;
+}
+
+#portfolio .card .btn {
+  color: whitesmoke;
+  border: 0px;
+  background: #039be5;
+  transition: background-color 0.3s ease;
+}
+
+#portfolio .card .btn:hover {
+  transition: background-color 0.3s ease;
+  background: #5eb8ff;
+}
+
+.project-img {
+  width: 10rem;
+  height: 10rem;
+}
+
+/*----------------------------------
+    Contact Styles 
+------------------------------------*/
+
+#contact {
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+}
