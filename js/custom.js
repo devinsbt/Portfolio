@@ -5,6 +5,8 @@ headerIconLinkDOM.style.width = str;
 
 const mainNav = document.getElementById('mainNav');
 
+const headerSubTitle = document.querySelector('.header-subtitle');
+
 function shrinkingNavBar() {
   if (
     document.body.scrollTop > 100 ||
