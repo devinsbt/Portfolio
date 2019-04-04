@@ -39,7 +39,9 @@
   </head>
 
   <body id="page-top">
-    <!-- Navigation -->
+    <!----------------------------------------------------------------------------
+    |                              SECTION - NAVIGATION                          |
+    ----------------------------------------------------------------------------->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"
@@ -67,27 +69,42 @@
               >
             </li>
             <li class="nav-item mx-lg-5">
-              <a class="nav-link js-scroll-trigger" href="#" target="_blank"
+              <a
+                class="nav-link js-scroll-trigger"
+                href="./resume.pdf"
+                target="_blank"
                 >Resume</a
               >
-            </li>
-            <li class="nav-item mx-lg-5">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!----------------------------------------------------------------------------
+    |                                SECTION - HEADER                            |
+    ----------------------------------------------------------------------------->
+
     <header>
       <div class="vertical-center">
         <div class="container">
           <h1 class="display-3">DEVIN EFENDY</h1>
-          <div class="d-inline-block header-subtitle typewriter">
+          <div class="d-inline-block header-subtitle typewriter mb-4">
             <!--Put the typewriter effect back later-->
             <h2>
-              A Complete Piece of Shit.
+              Developer. Builder. &lt;/&gt;
             </h2>
+          </div>
+          <div>
+            <a href="mailto: devinsbt@gmail.com" target="_blank">
+              <i class="fas fa-envelope mr-4 fa-4x"></i>
+            </a>
+            <a href="" target="_blank">
+              <i class="fab fa-github mr-4 fa-4x"></i>
+            </a>
+            <a href="" target="_blank">
+              <i class="fab fa-linkedin mr-4 fa-4x"></i>
+            </a>
           </div>
           <div class="header-icon text-center mb-5">
             <a class="js-scroll-trigger" href="#about">
@@ -128,14 +145,19 @@
       </div>
     </section>
 
+    <!----------------------------------------------------------------------------
+    |                               SECTION - PROJECTS                           |
+    ----------------------------------------------------------------------------->
+
     <section id="portfolio">
       <div class="text-center">
         <h2 class="display-4 pb-3">PROJECTS</h2>
       </div>
+
       <div class="container mt-5">
         <div class="row mx-auto project">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="card mx-auto material" style="width: 18rem;">
+          <div class="project-col col-lg-4 mb-4 mb-lg-0">
+            <div class="card mx-auto material">
               <img
                 class="card-img-top"
                 src="./images/convertr.png"
@@ -144,8 +166,11 @@
               <div class="card-body">
                 <h5 class="card-title">CONVERTR</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  A unit converter web application made with React and
+                  Semantic-UI. This app allow the user to save a conversion to a
+                  history. And delete it as well.
+                  <br />
+                  <br />
                 </p>
                 <a
                   href="https://devinsbt.github.io/convertr/"
@@ -163,8 +188,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 mb-4 mb-lg-0 ">
-            <div class="card mx-auto material" style="width: 18rem;">
+          <div class="project-col col-lg-4 mb-4 mb-lg-0 ">
+            <div class="card mx-auto material">
               <img
                 class="card-img-top"
                 src="./images/portfolio.png"
@@ -173,8 +198,9 @@
               <div class="card-body">
                 <h5 class="card-title">PORTFOLIO</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  This is the second iteration of my portfolio. It's amazing to
+                  see the result of learning in single a month. In this version,
+                  I completely changed the look of the website.
                 </p>
                 <a
                   href="https://github.com/devinsbt/Portfolio"
@@ -186,8 +212,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="card mx-auto material" style="width: 18rem;">
+          <div class="project-col col-lg-4 mb-4 mb-lg-0">
+            <div class="card mx-auto material">
               <img
                 class="card-img-top"
                 src="./images/sudoku-project.png"
@@ -196,8 +222,11 @@
               <div class="card-body">
                 <h5 class="card-title">SUDOKU</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  A Sudoku game that can randomly generate it's own question.
+                  This is also an improved version of my assignment which has
+                  hard-coded question into it.
+                  <br />
+                  <br />
                 </p>
                 <a
                   href="https://github.com/devinsbt/Sudoku"
@@ -210,34 +239,70 @@
           </div>
           <!--Cards-->
         </div>
-        <div class="row mx-auto">
-          <div class="col-lg-6 mx-auto"></div>
-          <div class="col-lg-6 mx-auto"></div>
+
+        <div class="row mx-auto mt-md-5">
+          <div class="project-col col-lg-4 mb-4 mb-lg-0">
+            <div class="card mx-auto material">
+              <img
+                class="card-img-top"
+                src="./images/old-portfolio.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">PORTFOLIO (OLD)</h5>
+                <p class="card-text">
+                  After learning about web development for thr first time. I
+                  made myself a Portfolio to apply everything that I have learn
+                  so far. This was primarly made with HTML, CSS, and Bootstrap.
+                </p>
+                <a
+                  href="https://github.com/devinsbt/Online-Portfolio"
+                  target="_blank"
+                  class="btn btn-primary material"
+                  >Source</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-col col-lg-4 mb-4 mb-lg-0 ">
+            <div class="card mx-auto material">
+              <img
+                class="card-img-top"
+                src="./images/tree-project.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">RECURSION TREE</h5>
+                <p class="card-text">
+                  This is the first mini-project that I built with Java when I
+                  just learned about recursion. The program generates a natural
+                  looking tree by randomizing variables (angle and length).
+                </p>
+                <a
+                  href="https://github.com/devinsbt/Recursive-Tree-Drawing"
+                  target="_blank"
+                  class="btn btn-primary material"
+                  >Source</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-col col-lg-4 mb-4 mb-lg-0"></div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col col-lg-8 mx-auto">
-            <h2>Contact us</h2>
-            <p class="lead">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
-              odio fugiat voluptatem dolor, provident officiis, id iusto!
-              Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa
-              exercitationem, in, quo totam.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!----------------------------------------------------------------------------
+    |                                SECTION - FOOTER                            |
+    ----------------------------------------------------------------------------->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-dark material">
       <div class="container">
         <p class="m-0 text-center text-white">
-          Copyright &copy; Your Website 2019
+          Copyright &copy; Devin Efendy 2019
         </p>
       </div>
       <!-- /.container -->
