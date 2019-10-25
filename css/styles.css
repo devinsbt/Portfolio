@@ -89,7 +89,7 @@ header i {
 }
 
 header i:hover {
-  color: #63ccff;
+  color: #006bbd;
 }
 
 .header-icon {
@@ -147,6 +147,7 @@ header i:hover {
     About Styles 
 ------------------------------------*/
 #about {
+  /* height: 100vh; */
   background-color: #4d4855;
   background-image: linear-gradient(147deg, #000000 0%, #474749 100%);
   color: white;
@@ -211,7 +212,7 @@ header i:hover {
 
 #portfolio .card {
   background: rgba(34, 34, 34, 0.75);
-  color: rgb(180, 180, 180);
+  color: rgb(230, 230, 230);
   transition: all 0.3s ease;
   height: 100%;
   width: 95%;
@@ -221,22 +222,27 @@ header i:hover {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-#portfolio .card:hover {
-  background: rgb(30, 30, 30, 0.9);
+/* #portfolio .card:hover {
+  background: rgb(30, 30, 30, 0.9); 
   color: rgb(230, 230, 230);
   transition: all 0.3s ease;
-}
+} */
 
 #portfolio .card .btn {
   color: whitesmoke;
   border: 0px;
-  background: #039be5;
+  background: #039ae5;
   transition: background-color 0.3s ease;
+
+  /* border: 1px solid #039ae5;
+  color: #039ae5;
+  border-color: #039ae5;
+  background: #00000000; */
 }
 
 #portfolio .card .btn:hover {
   transition: background-color 0.3s ease;
-  background: #5eb8ff;
+  background: #006bbd;
 }
 
 .project-img {
